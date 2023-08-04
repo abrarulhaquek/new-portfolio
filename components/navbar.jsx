@@ -1,4 +1,5 @@
 import { Facebook, FacebookRounded, GitHub, LinkedIn, Menu } from '@mui/icons-material';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -10,19 +11,20 @@ const Navbar = () => {
 
     return (
         // <nav className="bg-white shadow dark:bg-gray blur-sm">
-        <nav className="bg-white shadow z-50  fixed w-full">
+        <nav className="bg-white shadow z-50 py-2 fixed w-full">
             <div className="container px-6 py-3 mx-auto">
                 <div className="lg:flex lg:items-center">
                     <div className="flex items-center justify-between pb-1">
-                        <a href="#">
-                            <img
-                                className="w-auto h-10 rounded-full"
+                        <a href="#" className='w-12 top-2 h-12 absolute'>
+                            <Image
                                 src="/img/fav.jpg"
-                                alt=""
+                                alt="imgss"
+                                layout="fill"
+                                className='rounded-full'
                             />
                         </a>
 
-                        <div className="flex lg:hidden">
+                        <div className="flex lg:hidden w-full justify-end">
                             <button
                                 onClick={handleClick}
                                 type="button"
@@ -36,7 +38,7 @@ const Navbar = () => {
 
                     <div
                         className={`${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
-                            } absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white border-t-2 lg:border-none border-black lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between`}
+                            } absolute inset-x-0 z-20 flex-1 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white border-t-2 lg:border-none border-black mt-4 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center lg:justify-between`}
                     >
                         <div className="flex flex-col text-black capitalize dark:text-black lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
                             <a

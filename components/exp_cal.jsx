@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const TimeDifference = () => {
     const [timeDifference, setTimeDifference] = useState('');
-    const [yearDifference, setyearDifference] = useState('');
+    const [yearDifference, setYearDifference] = useState('');
 
     useEffect(() => {
         const calculateTimeDifference = () => {
@@ -25,7 +25,7 @@ const TimeDifference = () => {
             setTimeDifference(
                 ` ${weeks} weeks, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`
             );
-            setyearDifference(
+            setYearDifference(
                 `${years}`
             )
         };
@@ -38,7 +38,7 @@ const TimeDifference = () => {
 
         // Clear the interval on component unmount to avoid memory leaks
         return () => clearInterval(intervalId);
-    }, ['2021-08-08T10:00:00']);
+    }, []); // Empty dependency array, as we don't have any external dependencies
 
     return (
         <div className=' group absolute bottom-0 p-4 text-primaryColor '>

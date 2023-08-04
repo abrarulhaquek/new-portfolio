@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
@@ -18,8 +19,8 @@ export default function About() {
                     Throughout my development process, I place a strong emphasis on code quality, maintainability, and scalability. I follow best practices and design patterns to ensure that the codebase is organized, readable, and easy to maintain, making it efficient for collaboration with other developers on the project.
 
                     Overall, my extensive experience with Next.js and front-end development enables me to deliver high-quality, performant, and user-friendly web applications that align with modern web standards. I am passionate about creating exceptional user experiences and am always eager to stay updated with the latest advancements in the field to consistently deliver cutting-edge solutions to my clients.</div>
-                <div className="  basis-2/5">
-                    <img src="/img/next-js.svg" className='h-40 lg:p-0 pb-9 lg:h-80 m-auto' alt="" srcset="" />
+                <div className="  basis-2/5 h-40  lg:h-80 ">
+                    <Image src="/img/next-js.svg" className='m-auto lg:p-0 pb-9 !relative' layout='fill' objectFit='contain' alt="imgss" loading="lazy" />
                 </div>
             </div>
         </section>
