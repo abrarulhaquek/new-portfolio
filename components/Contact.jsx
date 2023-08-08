@@ -1,5 +1,6 @@
 import { FacebookRounded, GitHub, LinkedIn, Mail } from '@mui/icons-material'
-import React from 'react'
+import React from 'react';
+
 
 export default function Contact() {
     return (

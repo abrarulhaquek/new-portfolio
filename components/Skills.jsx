@@ -8,7 +8,7 @@ export default function Skills() {
                 my <span className=' text-primaryColor'>skills</span>
                 <span className=' -translate-x-56 sm:-translate-x-64 -translate-y-5 sm:-translate-y-8 md:-translate-x-96 md:-translate-y-10 absolute text-7xl sm:text-8xl md:text-9xl text-primaryColor opacity-20 '> skills </span>
             </div>
-            <Spline scene="https://prod.spline.design/WHUHpv9mFfQ4exK6/scene.splinecode" />
+            {/* <Spline scene="https://prod.spline.design/WHUHpv9mFfQ4exK6/scene.splinecode" /> */}
 
 
 
