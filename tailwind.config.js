@@ -16,10 +16,12 @@ module.exports = {
     textColor: {
       primaryColor: '#72b63b',
       black: '#252525',
-      white: 'white'
+      white: 'white',
+      gray: ''
     },
     borderColor: {
-      primaryColor: '#72b63b'
+      primaryColor: '#72b63b',
+      borderLight: 'rgb(156 163 175)'
     },
     screens: {
       xs: '380px',
