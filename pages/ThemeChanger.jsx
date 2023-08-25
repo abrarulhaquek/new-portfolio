@@ -1,9 +1,8 @@
-// themeContext.js
 import React, { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
-export const ThemeChanger = ({ children }) => {
+export const ThemeChangerProvider = ({ children }) => {
     const [theme, setTheme] = useState('dark'); // or 'dark'
     const themeColors = {
         light: {
@@ -32,5 +31,3 @@ export const ThemeChanger = ({ children }) => {
 export const useTheme = () => {
     return useContext(ThemeContext);
 };
-
-

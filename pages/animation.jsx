@@ -26,7 +26,6 @@
 // };
 
 // export { AnimatedBT, AnimatedLR, AnimatedRL };
-
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -41,6 +40,4 @@ const AnimatedElement = ({ children, animationClass }) => {
     return <div ref={ref} className={animatedClassName}>{children}</div>;
 };
 
-export { AnimatedElement };
-
-
+export default AnimatedElement;
