@@ -82,20 +82,20 @@ canvas {
 
 // border-2 rounded-[50%] h-[68%] w-[61%] absolute top-[67px] left-[107px]
 
-.line-animation {
-  // overflow: hidden;
-  // width: 330px;
-  // height: 313px;
-  // border-radius: 50%;
-  // border: 2px solid red;
-  // box-shadow: 60px -60px 0 2px transparent, -60px -60px 0 2px transparent,
-  //   -60px 60px 0 2px transparent, 60px 60px 0 2px transparent,
-  //   0 0 0 2px transparent;
-  // position: absolute;
-  // animation: border 0.4s ease 1 forwards;
-  // top: 14%;
-  // left: 21%;
-}
+// .line-animation {
+//   // overflow: hidden;
+//   // width: 330px;
+//   // height: 313px;
+//   // border-radius: 50%;
+//   // border: 2px solid red;
+//   // box-shadow: 60px -60px 0 2px transparent, -60px -60px 0 2px transparent,
+//   //   -60px 60px 0 2px transparent, 60px 60px 0 2px transparent,
+//   //   0 0 0 2px transparent;
+//   // position: absolute;
+//   // animation: border 0.4s ease 1 forwards;
+//   // top: 14%;
+//   // left: 21%;
+// }
 
 @keyframes border {
   0% {
@@ -118,4 +118,77 @@ canvas {
     box-shadow: 0 -125px 0 2px #e94e3d, -125px 0px 0 2px #e94e3d,
       0px 125px 0 2px #e94e3d, 120px 40px 0 2px #e94e3d, 0 0 0 2px #000000;
   }
+}
+
+// btn hover
+.hover_btn {
+  &:hover .hover_label {
+    color: white;
+  }
+  &:hover .hover_bg {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .hover_label {
+    transition: color 0.3s ease-out;
+  }
+
+  .hover_bg {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-out;
+  }
+}
+
+// input color
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch {
+  border: 0;
+  border-radius: 50%;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+}
+
+// AOS
+// Bottom to top
+.animated-BT {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.animated-BT.in-view-animated-BT {
+  opacity: 1;
+  transform: translateY(0);
+}
+// Left to right
+.animated-LR {
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animated-LR.in-view-animated-LR {
+  opacity: 1;
+  transform: translateX(0);
+}
+// Right to Left
+.animated-RL {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animated-RL.in-view-animated-RL {
+  opacity: 1;
+  transform: translateX(0);
 }

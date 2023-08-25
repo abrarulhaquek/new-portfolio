@@ -96,4 +96,68 @@ canvas {
   100% {
     box-shadow: 0 -125px 0 2px #e94e3d, -125px 0px 0 2px #e94e3d, 0px 125px 0 2px #e94e3d, 120px 40px 0 2px #e94e3d, 0 0 0 2px #000000;
   }
+}
+.hover_btn:hover .hover_label {
+  color: white;
+}
+.hover_btn:hover .hover_bg {
+  transform: translate(-50%, -50%) scale(1);
+}
+.hover_btn .hover_label {
+  transition: color 0.3s ease-out;
+}
+.hover_btn .hover_bg {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch {
+  border: 0;
+  border-radius: 50%;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+  border: 0;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+}
+
+.animated-BT {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.animated-BT.in-view-animated-BT {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-LR {
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animated-LR.in-view-animated-LR {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-RL {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animated-RL.in-view-animated-RL {
+  opacity: 1;
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

@@ -1,12 +1,15 @@
+import { AnimatedElement } from '@/pages/animation'
 import React from 'react'
 
 export default function Acadenic() {
     return (
         <section className="mx-auto container my-20 px-7" id='edu'>
-            <div className='text-3xl md:text-6xl sm:text-4xl font-black uppercase text-black mb-10 text-center relative'>
-                My <span className=' text-primaryColor'>Academic</span>
-                <span className=' -translate-x-[260px] -translate-y-2  sm:translate-x-[-306px] sm:-translate-y-3 md:translate-x-[-503px]  md:-translate-y-6 lg:translate-x-[-583px]  lg:-translate-y-9 absolute text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-primaryColor opacity-20 '> education </span>
-            </div>
+            <AnimatedElement animationClass="animated-BT">
+                <div className='text-3xl md:text-6xl sm:text-4xl font-black uppercase text-black mb-10 text-center relative'>
+                    My <span className=' text-primaryColor'>Academic</span>
+                    <span className=' -translate-x-[260px] -translate-y-2  sm:translate-x-[-306px] sm:-translate-y-3 md:translate-x-[-503px]  md:-translate-y-6 lg:translate-x-[-583px]  lg:-translate-y-9 absolute text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-primaryColor opacity-20 '> education </span>
+                </div>
+            </AnimatedElement>
             <div>
                 <h3 className="text-2xl md:text-3xl font-medium">SRM University</h3>
                 <h4 className=" text-lg md:text-xl leading-10">— Pursuing Master&apos;s in Computer Application</h4>

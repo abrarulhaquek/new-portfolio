@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import Navbar from '@/components/navbar'
 import Head from 'next/head'
 import React from 'react'
+import Layout from './layout'
 
 export default function index() {
   return (
@@ -14,13 +15,16 @@ export default function index() {
       <Head>
         <title>Abrar K</title>
       </Head>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Acadenic />
-      <Contact />
+      <Layout>
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Acadenic />
+        <Contact />
+      </Layout>
+
     </div>
   )
 }
