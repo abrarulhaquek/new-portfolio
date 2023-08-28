@@ -1,4 +1,4 @@
-import { AnimatedElement } from '@/pages/animation';
+import AnimatedElement from '@/pages/animation';
 import Image from 'next/image'
 import React, { useState } from 'react'
 export default function About() {

@@ -1,4 +1,4 @@
-import { AnimatedElement } from '@/pages/animation'
+import AnimatedElement from '@/pages/animation'
 import React from 'react'
 
 export default function Acadenic() {

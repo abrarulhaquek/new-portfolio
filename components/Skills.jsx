@@ -1,7 +1,7 @@
 import React from 'react'
 // import Spline from '@splinetool/react-spline';
 import Image from 'next/image';
-import { AnimatedElement } from '@/pages/animation';
+import AnimatedElement from '@/pages/animation';
 
 export default function Skills() {
     return (
