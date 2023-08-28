@@ -1,4 +1,4 @@
-import { useTheme } from '@/pages/ThemeChanger';
+import { useTheme } from '@/components/ThemeChanger';
 import { FacebookRounded, GitHub, LinkedIn, Menu } from '@mui/icons-material';
 import Image from 'next/image';
 import React, { useState } from 'react';

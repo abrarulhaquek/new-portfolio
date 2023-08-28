@@ -1,6 +1,6 @@
 // components/Layout.js
 import React from 'react';
-import { useTheme } from './ThemeChanger';
+import { useTheme } from '../components/ThemeChanger';
 
 const Layout = ({ children }) => {
     const { theme, themeColors } = useTheme();
