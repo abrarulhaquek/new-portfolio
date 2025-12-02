@@ -94,9 +94,9 @@ export default function Experience() {
       <AnimatedElement animationClass="animated-BT">
         <div className="text-3xl md:text-6xl sm:text-4xl font-black uppercase text-black mb-10 text-center relative">
           My <span className=" text-primaryColor">Experience</span>
-          <span className=" -translate-x-[260px] -translate-y-2  sm:translate-x-[-330px] sm:-translate-y-3 md:translate-x-[-534px]  md:-translate-y-6 lg:translate-x-[-625px]  lg:-translate-y-9 absolute text-5xl sm:text-6xl md:text-8xl lg:text-9xl text-primaryColor opacity-20 ">
+          <span className=" -translate-x-[235px] -translate-y-[0.75rem]  sm:translate-x-[-300px] sm:-translate-y-6 md:translate-x-[-480px]  md:-translate-y-10 lg:translate-x-[-485px]  lg:-translate-y-9 absolute text-6xl sm:text-[5rem] md:text-9xl lg:text-9xl text-primaryColor  opacity-40 -z-10 ">
             {" "}
-            experience{" "}
+            career{" "}
           </span>
         </div>
       </AnimatedElement>

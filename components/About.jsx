@@ -10,12 +10,99 @@ export default function About() {
       top: e.pageY - e.currentTarget.offsetTop,
     });
   };
+  const images = [
+    {
+      src: "/img/icons/html-1.svg",
+      className:
+        "img-animation anime-1 m-auto !w-8 sm:!w-10 !-top-[90px] !-left-[250px] sm:!-left-[301px] sm:!-top-[102px]",
+      alt: "html",
+    },
+    {
+      src: "/img/icons/css-3 (1).svg",
+      className:
+        "img-animation anime-2 m-auto !w-8 sm:!w-10 !-left-[170px] sm:!-left-[190px] !-top-[200px] sm:!-top-[245px]",
+      alt: "css",
+    },
+    {
+      src: "/img/icons/sass-1 (2).svg",
+      className:
+        "img-animation anime-1 m-auto !w-8 sm:!w-10 !-top-[260px] sm:!-top-[300px]",
+      alt: "sass",
+    },
+    {
+      src: "/img/icons/bootstrap-5-1.svg",
+      className:
+        "img-animation anime-2 m-auto !w-10 sm:!w-12 !left-[170px] !-top-[200px] sm:!-top-[245px] sm:!left-[185px]",
+      alt: "bootstrap",
+    },
+    {
+      src: "/img/icons/tailwind-css-2.svg",
+      className:
+        "img-animation anime-1 m-auto !w-8 sm:!w-10 !left-[240px] sm:!left-[308px] !-top-[80px] sm:!-top-[100px]",
+      alt: "tailwindcss",
+    },
+    {
+      src: "/img/icons/figma-5.svg",
+      className:
+        "img-animation anime-2 m-auto !w-11 sm:!w-12 !left-[240px] sm:!left-[315px] !top-7 sm:!top-9",
+      alt: "figma",
+    },
+    {
+      src: "/img/icons/jquery.svg",
+      className:
+        "img-animation anime-1 m-auto !w-11 sm:!w-12 !left-[220px] sm:!left-[280px] !top-[140px] sm:!top-[180px]",
+      alt: "jquery",
+    },
+    {
+      src: "/img/icons/git-icon.svg",
+      className:
+        "img-animation anime-2 m-auto !w-8 sm:!w-10 !left-[130px] sm:!left-[160px] !top-[240px] sm:!top-[260px]",
+      alt: "git",
+    },
+    {
+      src: "/img/icons/angular-icon-1.svg",
+      className:
+        "img-animation anime-1 m-auto !w-8 sm:!w-10 !top-[280px] sm:!top-[310px]",
+      alt: "angular",
+    },
+    {
+      src: "/img/icons/react-2 (1).svg",
+      className:
+        "img-animation anime-2 m-auto !w-8 sm:!w-10 !-left-[130px] sm:!-left-[150px] !top-[230px] sm:!top-[260px]",
+      alt: "react",
+    },
+    {
+      src: "/img/icons/logo-javascript.svg",
+      className:
+        "img-animation anime-1 m-auto !w-8 sm:!w-10 !-left-[220px] sm:!-left-[260px] !top-[150px] sm:!top-[180px]",
+      alt: "javascript",
+    },
+    {
+      src: "/img/icons/material-ui-1.svg",
+      className:
+        "img-animation anime-2 m-auto !w-8 sm:!w-10 !-left-[250px] sm:!-left-[321px] !top-7 sm:!top-9",
+      alt: "material-ui",
+    },
+    // {
+    //   src: "/img/icons/npm-square-red-1.svg",
+    //   className:
+    //     "img-animation  m-auto  !w-8 sm:!w-10 !-left-[] sm:!-left-[350px] !-top-[200px]",
+    //   alt: "NPM",
+    // },
+    {
+      src: "/img/icons/next-js (1).svg",
+      className:
+        "drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] !h-fit m-auto absolute !w-[150px]",
+      alt: "nextjs",
+    },
+  ];
+
   return (
     <section className="mx-auto container my-20 px-7" id="about">
       <AnimatedElement animationClass="animated-BT">
         <div className="md:text-6xl text-4xl font-black uppercase text-black mb-10 text-center relative">
           About <span className=" text-primaryColor">Me</span>
-          <span className=" -translate-x-56 sm:-translate-x-64 -translate-y-5 sm:-translate-y-8 md:-translate-x-96 md:-translate-y-10 absolute text-7xl sm:text-8xl md:text-9xl text-primaryColor opacity-20 ">
+          <span className=" -translate-x-56 sm:-translate-x-64 -translate-y-5 sm:-translate-y-8 md:-translate-x-96 md:-translate-y-10 absolute text-7xl sm:text-8xl md:text-9xl text-primaryColor opacity-40 -z-10 ">
             {" "}
             About{" "}
           </span>
@@ -93,113 +180,20 @@ export default function About() {
           </a>
         </div>
 
-        <div className="  basis-2/5 relative lg:p-4 py-[200px]  ">
-          <div className=" line-animation"></div>
-          <Image
-            src="/img/icons/html-1.svg"
-            className="img-animation anime-1  m-auto  !w-8 sm:!w-10 !-top-[90px]  !-left-[250px] sm:!-left-[301px] sm:!-top-[102px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/css-3 (1).svg"
-            className="img-animation anime-2  m-auto  !w-8 sm:!w-10 !-left-[170px] sm:!-left-[190px] !-top-[200px] sm:!-top-[245px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/sass-1 (2).svg"
-            className="img-animation anime-1  m-auto  !w-8 sm:!w-10  !-top-[260px] sm:!-top-[300px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/bootstrap-5-1.svg"
-            className="img-animation anime-2  m-auto  !w-10 sm:!w-12 !left-[170px] !-top-[200px] sm:!-top-[245px] sm:!left-[185px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/tailwind-css-2.svg"
-            className="img-animation anime-1  m-auto  !w-8 sm:!w-10 !left-[240px] sm:!left-[308px] !-top-[80px] sm:!-top-[100px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/figma-5.svg"
-            className="img-animation anime-2  m-auto  !w-11 sm:!w-12 !left-[240px] sm:!left-[315px] !top-7 sm:!top-9"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/jquery.svg"
-            className="img-animation anime-1  m-auto  !w-11 sm:!w-12 !left-[220px] sm:!left-[280px] !top-[140px] sm:!top-[180px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/git-icon.svg"
-            className="img-animation anime-2  m-auto  !w-8 sm:!w-10 !left-[130px] sm:!left-[160px] !top-[240px] sm:!top-[260px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/angular-icon-1.svg"
-            className="img-animation anime-1  m-auto  !w-8 sm:!w-10  !top-[280px] sm:!top-[310px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/react-2 (1).svg"
-            className="img-animation anime-2  m-auto  !w-8 sm:!w-10 !-left-[130px] sm:!-left-[150px] !top-[230px] sm:!top-[260px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/logo-javascript.svg"
-            className="img-animation anime-1  m-auto  !w-8 sm:!w-10 !-left-[220px] sm:!-left-[260px] !top-[150px] sm:!top-[180px]"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          <Image
-            src="/img/icons/material-ui-1.svg"
-            className="img-animation anime-2  m-auto  !w-8 sm:!w-10 !-left-[250px] sm:!-left-[321px] !top-7 sm:!top-9"
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
-          {/* <Image src="/img/icons/npm-square-red-1.svg" className='img-animation  m-auto  !w-8 sm:!w-10 !-left-[] sm:!-left-[350px] !-top-[200px]' layout='fill' objectFit='contain' alt="imgss" loading="lazy" /> */}
-          <Image
-            src="/img/icons/next-js (1).svg"
-            className="drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] !h-fit m-auto absolute !w-[150px] "
-            layout="fill"
-            objectFit="contain"
-            alt="imgss"
-            loading="lazy"
-          />
+        <div className="basis-2/5 relative lg:p-4 py-[200px]">
+          <div className="line-animation"></div>
+
+          {images.map((img, index) => (
+            <Image
+              key={index}
+              src={img.src}
+              className={img.className}
+              layout="fill"
+              objectFit="contain"
+              alt={img.alt}
+              loading="lazy"
+            />
+          ))}
         </div>
       </div>
     </section>

@@ -23,8 +23,8 @@ const Navbar = () => {
           <div className="flex items-center justify-between pb-1">
             <a href="#" className="w-12 top-2 h-12 absolute">
               <Image
-                src="/img/personal/fav.jpg"
-                alt="imgss"
+                src="/img/personal/favicon.jpg"
+                alt="My Image"
                 layout="fill"
                 className="rounded-full"
               />
