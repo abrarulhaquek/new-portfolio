@@ -58,7 +58,7 @@ export default function Experience() {
     {
       id: 3,
       animationClass: "animated-LR",
-      ribbonImg: "/img/company/fav-asraaz.png",
+      ribbonImg: "/img/company/fav-Asraaz.png",
       ribbonHeight: 0,
       ribbonWidth: 30,
       logo: "/img/company/Asraaz-Logo.png",
@@ -74,14 +74,14 @@ export default function Experience() {
     {
       id: 4,
       animationClass: "animated-RL",
-      ribbonImg: "/img/company/fav-insueta.png",
+      ribbonImg: "/img/company/fav-Insueta.png",
       ribbonHeight: 0,
       ribbonWidth: 30,
       logo: "/img/company/Insueta-Logo.png",
       height: 100,
       width: 150,
-      alt: "Zydni Software Solutions",
-      name: "Zydni Software Solutions",
+      alt: "Insueta Technologies",
+      name: "Insueta Technologies",
       exp: "1 Year 9 Month",
       role: "Frontend Developer",
       skills:
@@ -104,7 +104,7 @@ export default function Experience() {
         <div className="grid lg:grid-cols-2 grid-cols-1 mt-20 gap-4 ">
           {experience.map((item) => (
             <AnimatedElement key={item.id} animationClass={item.animationClass}>
-              <div className="border border-borderLight rounded-lg p-8 w-full  shadow-xl relative h-full">
+              <div className="border border-borderLight rounded-lg p-8 w-full  shadow-xl relative h-full bg-white">
                 <div className="absolute bg-gradient-to-b from-[#eec443] to-[#d3a12e] right-4 h-12 -top-1 grid place-content-center w-16  after:absolute after:top-12 after:w-full after:border-l-[32px] after:border-l-[#d3a12e]  after:border-r-[32px] after:border-r-[#d3a12e]  after:border-b-[38px] after:border-b-[transparent] before:h-1 before:w-1 before:bg-[#eec443] before:absolute before:right-[-4px] ">
                   <Image
                     src={item.ribbonImg}
@@ -120,25 +120,25 @@ export default function Experience() {
                   height={item.height}
                   alt={item.alt}
                 />
-                <h1 className="text-2xl font-bold uppercase mb-4">
+                <h1 className="text-2xl text-primaryColor font-bold uppercase mb-4">
                   {item.name}
                 </h1>
-                <p className="text-md">
+                <p className="text-md text-black">
                   <span className="text-primaryColor font-bold ">
                     {" "}
                     Experience{" "}
                   </span>
                   : {item.exp}
                 </p>
-                <p className="text-md">
+                <p className="text-md text-black">
                   <span className="text-primaryColor font-bold "> Role </span>:
                   {item.role}
                 </p>
-                <p className="text-md">
+                <p className="text-md text-black">
                   <span className="text-primaryColor font-bold "> Skills </span>
                   :{item.skills}
                 </p>
-                <p className="text-md">
+                <p className="text-md text-black">
                   <span className="text-primaryColor font-bold ">
                     {" "}
                     Duration{" "}

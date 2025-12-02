@@ -4,11 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          rel="shortcut icon"
-          href="/img/personal/fav.jpg"
-          type="image/x-icon"
-        />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

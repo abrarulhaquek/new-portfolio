@@ -15,7 +15,7 @@ export default function Hero() {
               Abrar Ul Haque
             </h1>
             <p className="mb-8 leading-relaxed md:text-4xl text-primaryColor text-2xl">
-              React Developer
+              Fronted Developer
             </p>
           </div>
           <div className="rounded-full overflow-hidden h-80 w-80 ">
